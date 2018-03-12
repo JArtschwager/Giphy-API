@@ -1,0 +1,19 @@
+
+#gifs-go-here {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+#gifs-go-here .item {
+    margin: 4px;
+    padding: 4px;
+    border: 1px gray solid;
+}
+
+#buttons {
+    margin: 4px;
+    padding: 4px;
+    
+}
+
