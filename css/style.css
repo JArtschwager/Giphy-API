@@ -13,7 +13,54 @@
 
 #buttons {
     margin: 4px;
-    padding: 4px;
-    
+    padding: 15px;
+    font-size: 20px;
 }
 
+#sideNav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+}
+
+.giphybutton {
+    color: rgb(30, 28, 43);
+    background-color: rgb(202, 214, 255);
+    margin: 5px;
+    padding: 5px;
+    display: center;
+    border-style: solid;
+    border-color: rgb(10, 10, 10);
+}
+
+.header-style {
+    padding: 10px;
+    color: rgb(30, 28, 43);
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+
+
+}
+
+.style-nav {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#add-animal {
+    margin: 10px;
+    padding: 5px;
+    color: rgb(30, 28, 43);
+
+}

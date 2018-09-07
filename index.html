@@ -8,34 +8,57 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="welcomeTHG">
 
+
+    <!-- template -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Giphy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                    <li>
+                            <form id="animal-form">
+                                    <div class="style-nav">Add to Animals List</div>
+                                    <input type="text" id="animal-input">
+                                    <br>
+                                    <input id="add-animal" type="submit" value="Submit">
+                                </form>
+                    </li>
+                    <li>
+                       <div class="style-nav">OR</div> 
+                    </li>
+                <li class="nav-item" id="buttons">
+                    <a class="style-nav">Click to view Images</a>
+                </li> 
+            </ul>
+        </div>
+    </nav>
+
+    <!-- end template -->
+   <header class="welcomeTHG">
+       <div class="header-style">
+        <div class="container">
+           <div>Click on a button to view pictures of animals from that category.  Do you have an animal you want to view that's not listed?  Add a button by typing it into the left hand search box.</div>
+        </div>
+        </div>
     </header>
 
+    <div class="container">
+        <div class="gif-box">
+            <div id="gifs-go-here">
 
-    <div id="buttons">
-        
-        <!-- <button class="giphybutton" data-animal="penguin">Penguin</button>
-        <button class="giphybutton" data-animal="cat">Cat</button>
-        <button class="giphybutton" data-animal="dog">Dog</button>
-        <button class="giphybutton" data-animal="monkey">Monkey-ing</button>
-        <button class="giphybutton" data-animal="kangaroo">kangaroo</button> -->
+            </div>
+        </div>
     </div>
-
-    
-
-    <form id="animal-form">
-            <label for="animal-input">Add an animal</label>
-            <input type="text" id="animal-input">
-            <br>
-            <input id="add-animal" type="submit" value="Submit">
-        </form>
-    <div id="gifs-go-here"></div>
-
-    
 
 
 

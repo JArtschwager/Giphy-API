@@ -1,4 +1,4 @@
-//on click this whole function will run to show giphy
+//on click show giphy
 $(".giphybutton").on("click", function () {
     var searchTerm = $(this).attr("data-animal");
     console.log(searchTerm);
@@ -11,13 +11,10 @@ $(".giphybutton").on("click", function () {
 function createButton(buttontext) {
 
     var giphybtn = $("<button class='giphybutton'>");
-    //make the button have the attribute of the input value.
     giphybtn.attr("data-animal", buttontext);
-    //display the text in the button.
     giphybtn.text(buttontext);
 
     console.log(buttontext);
-    //add the button to the webpage
     $("#buttons").append(giphybtn);
     // resetEvent();
     //start with having button off, removes the event hanlders
@@ -53,7 +50,6 @@ var getGiphyImages = function (searchTerm) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        //if this doesn't work try data.images.fixed_height:
         var results = response.data;
         console.log(results);
 
@@ -92,23 +88,16 @@ var getGiphyImages = function (searchTerm) {
 
 
 //submits the form to create the new button
-//# is where it will go, submit sends the text to be made 
 $("#animal-form").submit(function (event) {
     //input the value from the user input, remove any blank space.
     var input = $("#animal-input").val().trim();
-    //create the button
     createButton(input);
     //when they click the form, we clear out the value of the text box.
     $("#animal-input").val("");
     //preventing the form from submitting.
     event.preventDefault();
 
-
-
-
-    //<button class="giphybutton" data-animal="penguin">Penguin, waddle waddle</button>
-
 });
 
-//the array for making buttons on opening.
+//the array for on open examples. 
 buttonloop(['penguin', 'cat', 'dog', 'bunny', 'kitten', 'kangaroo', 'elephant', 'caterpillar', 'horse', 'lion', 'tiger', 'bear']);
